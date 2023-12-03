@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    {% for post in object_list %}
+
+        <div style="text-align: center; text-decoration: none; font-family: sans-serif; color: teal;">
+            <h3><a>From {{ post.FirstName }}</a></h3>
+            <h4><a>{{ post.Email }}</a></h4>
+        </div>
+
+    {% endfor %}
+
+{% endblock content %}
